@@ -304,5 +304,9 @@ def get_stdin(message)
   STDIN.gets.chomp
 end
 
+task :compile do
+    `recess --compress assets/less/style.less > assets/css/style.min.css`
+end
+
 #Load custom rake scripts
 Dir['_rake/*.rake'].each { |r| load r }
