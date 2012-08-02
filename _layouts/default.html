@@ -1,63 +1,78 @@
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-  <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-    <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-      <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-        <head>
-          <meta charset="utf-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-          <title>{% if page.title %} {{ page.title }} - {% endif %}dagingaa@github</title>
-          <meta name="description" content="dagingaa @ GitHub">
-          <meta name="author" content="{% if page.author %} {{ page.author }} {% endif %}">
+  <title>{% if page.title %} {{ page.title }} - {% endif %}dagingaa@github</title>
+  <meta name="description" content="dagingaa @ GitHub">
+  <meta name="author" content="{% if page.author %} {{ page.author }} {% endif %}">
 
-          <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width">
 
-          <link rel="stylesheet" href="/assets/css/pygment.css">
+  <link rel="stylesheet" href="/assets/css/pygment.css">
 
-          <!-- Development -->
+  <!-- Development -->
           <!--
           <link rel="stylesheet/less" href="/assets/less/style.less">
           <script type="text/javascript" src="/assets/js/libs/less-1.3.0.min.js"></script>
-          -->
+        -->
 
-          <!-- Production -->
+        <!-- Production -->
 
-          <link rel="stylesheet" href="/assets/css/style.min.css">
+        <link rel="stylesheet" href="/assets/css/style.min.css">
 
-          <link rel="alternate" type="application/rss+xml" title="dagingaa @ github" href="http://dagingaa.github.com/atom.xml" />
+        <link rel="alternate" type="application/rss+xml" title="dagingaa @ github" href="http://dagingaa.github.com/atom.xml" />
 
           <!--
           <script src="/assets/js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
-          -->
-            <script type="text/javascript" src="//use.typekit.net/lky2lyl.js"></script>
-            <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-        </head>
-        <body>
-          <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-          <div class="container">
+        -->
 
-            <div class="row">
-              <div class="span9">
-                <div id="hello" class="well-black">
-                  <h1>Hi! I'm Dag-Inge.</h1>
-                  <p>I love programming. I love the web. I also happen to love cake.</p>
-                </div>
-              </div>
-              <div class="span3 profile">
-                <a href="/">
-                  <img src="/assets/img/profile.jpg" alt="This is me"/>
-                </a>
+        <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-7814313-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+        </script>
+
+        <script type="text/javascript" src="//use.typekit.net/lky2lyl.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+      </head>
+      <body>
+        <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+        <div class="container">
+
+          <div class="row">
+            <div class="span9">
+              <div id="hello" class="well-black">
+                <h1>Hi! I'm Dag-Inge.</h1>
+                <p>I love programming. I love the web. I also happen to love cake.</p>
               </div>
             </div>
-            {{ content }}
-          </div> <!-- /container -->
-          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-          <script>window.jQuery || document.write('<script src="/assets/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
-            
-            <script src="/assets/js/libs/bootstrap/bootstrap.min.js"></script>            
-            <script src="/assets/js/plugins.js"></script>
+            <div class="span3 profile">
+              <a href="/">
+                <img src="/assets/img/profile.jpg" alt="This is me"/>
+              </a>
+            </div>
+          </div>
+          {{ content }}
+        </div> <!-- /container -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/assets/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+        
+        <script src="/assets/js/libs/bootstrap/bootstrap.min.js"></script>            
+        <script src="/assets/js/plugins.js"></script>
 
-            <!-- end scripts-->           
-          </body>
-        </html>
+        <!-- end scripts-->           
+      </body>
+      </html>
