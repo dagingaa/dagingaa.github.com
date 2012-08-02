@@ -2,4 +2,23 @@
 layout: default
 ---
 {% include JB/setup %}
-{% include themes/twitter/post.html %}
+<div class="row">
+	<div class="span12">
+		<article class="well">
+			<header class="page-header">
+				<h1>
+					<a href="{{post.url}}">{{post.title}}{{page.title}}</a>
+					<small>Written by Dag-Inge Aas</small>
+				</h1>
+			</header>
+			<p class="byline muted">
+				<span><i class="icon-time"></i> {{page.date | date: "%Y-%m-%d"}}{{post.date | date: "%Y-%m-%d"}}</span>
+				<span><i class="icon-bookmark"></i> {{page.categories}}{{post.categories}}</span>
+				<span><i class="icon-comments"></i> <a href="{{post.url}}#disqus_thread">Comments</a></span>
+
+			</p>
+			{{content}}
+			{% include JB/comments %}
+		</article>
+	</div>
+</div>
