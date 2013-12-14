@@ -28,13 +28,13 @@ Configuring Karma to serve files is as simple as declaring which files you want
 it to serve. This works great for `*.js` files, but what about HTML and other
 static files? It turns out that Karma only really likes serving JavaScript
 files, so we have to do some clever workarounds to make Angular templates,
-which are just regular HTML files work.
+which are just regular HTML files, work.
 
 To make Karma serve HTML templates, we have to use a preprocessor that turns
 HTML templates into JavaScript strings and registers them with Angular's
 [$templateCache](http://docs.angularjs.org/api/ng.$templateCache). This means
 that Angular can access the templates without having to make separate HTTP
-requests. All we need to do is serve the processed template JavaScript.
+requests. All we need to do then is serve the processed template JavaScript.
 
 After some research, I found
 [karma-ng-html2js-preprocessor](https://github.com/karma-runner/karma-ng-html2js-preprocessor),
@@ -147,7 +147,7 @@ templates this way.
 The first one is non-html content. If you, like us, use `ng-include` to insert
 svg data into the DOM (so you can style it with CSS), you are going to have a
 bad time. PhantomJS will throw an error and exit, so you have to find another
-way. What we did was mock the file path in `$httpBackend` so that it responded
+way. What I did was mock the file path in `$httpBackend` so that it responded
 with an empty string for all instances of `.svg`.
 
 
