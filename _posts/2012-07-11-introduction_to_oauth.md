@@ -1,6 +1,6 @@
 ---
 layout: post
-authors: [dagingaa, havardge]
+authors: dagingaa
 title: Introduction to OAuth 2.0
 category: OAuth
 ---
