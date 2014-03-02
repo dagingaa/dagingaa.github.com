@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300|Roboto+Condensed:400,300);
+
+body {
+    font-family: 'Roboto Slab', Merriweather, Georgia, serif;
+    font-weight: 300;
+}
+
+main {
+    max-width: 750px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+    header.main {
+        text-align: center;
+
+        img {
+            display: block;
+            width: 100px;
+            border-radius: 95px;
+            margin: 20px auto;
+        }
+    }
+    header.page-header {
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+
+        p {
+            text-indent: 0;
+            margin-top: -1.0em;
+        }
+    }
+
+}
+
+section {
+    h1 {
+        text-align: center;
+    }
+}
+
+ul.posts {
+    list-style: none;
+    li {
+        margin-left: -2em;
+    }
+}
+
+pre code {
+    display: block;
+    padding: .5em;
+    color: #333;
+    background: #f8f8f8;
+}
+
+p {
+    font-family: 'Roboto Slab', Merriweather, Georgia, serif;
+    font-weight: 300;
+}
+
+p + p {
+    text-indent: 0;
+    margin-top: 0;
+}
+
+a {
+    color: #0088cc;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+}
+
+iframe {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
