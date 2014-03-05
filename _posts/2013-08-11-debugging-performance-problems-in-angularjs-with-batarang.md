@@ -36,13 +36,13 @@ two directives, one for horizontal lists, and one for covers.
 
 {% highlight html linenos %}
 <div class="lists" ng-repeat="list in lists">
-  <h1>{{list.title}}</h2>
+  <h1>{ { list.title } }</h1>
   <div class="previousPage" ng-click="previousPage()"></div>
   <ol class="scrollable list">
     <li class="cover" ng-repeat="movie in list.items">
       <img ng-src="movie.coverImages.160x225">
-      <h2 class="title">{{movie.title}}</h2>
-      <p class="runningTime">{{movie.runningTime}} minutes</p>
+      <h2 class="title">{ { movie.title } }</h2>
+      <p class="runningTime">{ { movie.runningTime } } minutes</p>
     </li>
   </ol>
   <div class="nextPage" ng-click="nextPage()"></div>
