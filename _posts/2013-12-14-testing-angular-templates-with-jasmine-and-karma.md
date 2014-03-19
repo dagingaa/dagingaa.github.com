@@ -5,7 +5,7 @@ title: Testing AngularJS directive templates with Jasmine and Karma
 category: Technology
 ---
 
-In my day job, I work on [appear.in](https.//appear.in),
+In my day job, I work on [appear.in](https://appear.in),
 a [video chat service built with AngularJS and WebRTC](http://comoyo.github.io/blog/2013/08/05/video-meetings-in-the-browser-using-webrtc-and-angularjs/).
 Recently, our application has become more complex, and our HTML templates ended
 up having a lot of state in them. We could no longer just use unit testing to
