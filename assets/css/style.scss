@@ -3,27 +3,105 @@
 body {
     font-family: 'Roboto Slab', Merriweather, Georgia, serif;
     font-weight: 300;
+    margin: 0;
 }
 
+
+
 main {
-    max-width: 750px;
-    padding: 0 10px;
-    margin: 0 auto;
-
-    header.main {
-        text-align: center;
-
+    div.page {
+        max-width: 750px;
+        padding: 0 10px;
+        margin: 0 auto;
         img {
-            display: block;
-            width: 100px;
-            border-radius: 95px;
-            margin: 20px auto;
+            width: 100%;
+        }
+
+        header.main {
+            text-align: center;
+
+            img {
+                display: block;
+                width: 100px;
+                border-radius: 95px;
+                margin: 20px auto;
+            }
+        }
+        header.page-header {
+            text-align: center;
+        }
+
+    }
+
+    div.photos {
+        width: 100%;
+        height: 100%;
+
+        header.main {
+            z-index: 10;
+            position: fixed;
+            top: 5px;
+            left: 5px;
+            img {
+                display: block;
+                width: 40px;
+                border-radius: 50%;
+            }
+        }
+
+        figure {
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            position: relative;
+            img {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+            }
+            .well {
+                position: absolute;
+                background-color: rgba(255,255,255,0.8);
+                width: 320px;
+                padding: 1em;
+                opacity: 0.6;
+                transition: opacity 0.3s ease-in;
+                &:hover {
+                    opacity: 1.0;
+                }
+
+                &.black {
+                    background-color: rgba(0,0,0,0.8);
+                    color: white;
+                    h1 {
+                        color: white;
+                    }
+                }
+
+                &.top {
+                    top: 50px;
+                }
+
+                &.right {
+                    right: 50px;
+                }
+
+                &.left {
+                    left: 50px;
+                }
+
+                &.bottom {
+                    bottom: 50px;
+                }
+            }
+            @media (max-width: 600px) {
+                .well {
+                    display: none;
+                }
+            }
+
         }
     }
-    header.page-header {
-        text-align: center;
-    }
-
     footer {
         text-align: center;
 
@@ -71,10 +149,6 @@ a {
 
 a:hover {
     color: #ff0000;
-}
-
-img {
-    width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
