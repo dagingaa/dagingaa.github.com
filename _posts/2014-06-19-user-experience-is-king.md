@@ -76,7 +76,7 @@ and emotional experience, seeing that other person light up when they see you,
 see their smile, the glow in their eyes. You then realise what you're missing
 out on when you just send text messages or images, that feeling of human contact.
 
-<iframe width="853" height="480" src="//www.youtube.com/embed/Z9h30NcVy4E" frameborder="0" allowfullscreen></iframe>
+<iframe width="853" height="480" src="//www.youtube.com/embed/Z9h30NcVy4E" frameborder="0" ></iframe>
 
 It's these kinds of new user experiences that will shape and innovate the way we
 communicate in the next five years. And I think a major part of it will become
